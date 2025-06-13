@@ -27,10 +27,7 @@ const ProblemOne = () => {
   function sum_to_n_c(n: number): number {
     if (n <= 0) return 0;
 
-    return Array.from({ length: n }, (_, i) => i + 1).reduce(
-      (sum, current) => sum + current,
-      0
-    );
+    return (n * (n + 1)) / 2;
   }
 
   return (
